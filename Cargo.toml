@@ -1,0 +1,19 @@
+[package]
+name = "statement-camt"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+description = "ISO 20022 CAMT.053 bank statement adapter producing recon-kit Statements — both balances verified, booked-only entries, sign-normalised"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/WyattAu/statement-camt"
+keywords = ["iso20022", "camt", "banking", "accounting", "reconciliation"]
+categories = ["finance", "parser-implementations"]
+
+[dependencies]
+recon-kit = "=0.1.0"
+
+[lints.clippy]
+unwrap_used = "deny"
+expect_used = "deny"
+indexing_slicing = "deny"
+panic = "deny"
