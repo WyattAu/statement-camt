@@ -1,9 +1,9 @@
 [package]
 name = "statement-camt"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 rust-version = "1.85"
-description = "ISO 20022 CAMT.053 bank statement adapter producing recon-kit Statements — both balances verified, booked-only entries, sign-normalised"
+description = "ISO 20022 CAMT.053 bank statement adapter producing recon-kit Statements: both balances verified, booked-only entries"
 license = "MIT OR Apache-2.0"
 repository = "https://github.com/WyattAu/statement-camt"
 keywords = ["iso20022", "camt", "banking", "accounting", "reconciliation"]
