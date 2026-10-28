@@ -1,0 +1,16 @@
+
+# cargo-vet config file
+
+[cargo-vet]
+version = "0.10"
+
+[policy.statement-camt]
+audit-as-crates-io = true
+
+[[exemptions.recon-kit]]
+version = "0.1.0"
+criteria = "safe-to-deploy"
+
+[[exemptions.statement-camt]]
+version = "0.1.1"
+criteria = "safe-to-deploy"
