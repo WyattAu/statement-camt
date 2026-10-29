@@ -12,6 +12,9 @@ categories = ["finance", "parser-implementations"]
 [dependencies]
 recon-kit = "=0.1.0"
 
+[dev-dependencies]
+proptest = "1"
+
 [lints.clippy]
 unwrap_used = "deny"
 expect_used = "deny"
