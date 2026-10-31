@@ -10,7 +10,7 @@ which makes the balance identity trivially true and the truncated-import check
 inert. **CAMT.053 carries both**: an `OPBD` (opening-balance-booked) `Bal`
 block and a `CLBD` (closing-balance-booked) one. The adapter takes both at
 face value, so a statement whose import lost an entry fails on arrival with a
-`BalanceIdentityFailed` error naming all three numbers — opening, computed,
+`BalanceIdentityFailed` error naming all three numbers; opening, computed,
 declared closing.
 
 ## What is filtered, and why
@@ -20,7 +20,7 @@ declared closing.
 in the model's sense. `INFO` (memo-only) is excluded by the same rule. An
 entry with no status block fails closed: skipped, not reconciled.
 
-**Signs become direction.** CAMT does not sign amounts — it carries an explicit
+**Signs become direction.** CAMT does not sign amounts; it carries an explicit
 `<CdtDbtInd>`. The mapping is the identity the format already provides.
 
 ## Identity and dates
@@ -35,7 +35,7 @@ to its date).
 Namespace-agnostic (local-name matching): `camt.053.001.02` through `.08` and
 pre-ISO Swift variants all parse. Multi-statement documents return one
 `Statement` per `<Stmt>` block. Structural XML validation is deliberately not
-attempted — the balance identity is the real well-formedness test.
+attempted; the balance identity is the real well-formedness test.
 
 ## Licence
 
